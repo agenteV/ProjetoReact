@@ -4,6 +4,7 @@ import Header from './components/header/Header'
 import Cards from './components/main/Cards'
 import Form from './components/main/Form'
 import Habilidades from './components/main/Habilidades'
+
 function App() {
   
 
@@ -11,8 +12,8 @@ function App() {
     <>
       <Header/>
       <Cards/>
-      <Form/>
       <Habilidades/>
+      <Form/>
       <Footer/>
     </>
   )

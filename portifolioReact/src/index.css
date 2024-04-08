@@ -1,18 +1,8 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+#root{
+  width: 100%;
 }
-
 a {
   font-weight: 500;
   color: #646cff;
@@ -23,14 +13,20 @@ a:hover {
 }
 
 body {
+  font-family: 'poppins' ;
+  padding: 0;
+  text-align: center;
   margin: 0;
   display: flex;
-  min-width: 320px;
+  width: 100%;
   min-height: 100vh;
+  background-color: rgb(0, 0, 0);
 }
 
 h1 {
-  font-size: 3.2em;
+  margin: 0;
+  font-size: 50px;
+  word-break: break-all;
   line-height: 1.1;
 }
 
@@ -67,32 +63,48 @@ button:focus-visible {
 }
 
 /*Footer*/
-.contFooter{
-  display: flex;
-  background-color: #302e2e;
+footer {
+  background-color: #161515;
+  color: #fff;
   padding: 15px;
+  text-align: center;
+  
 }
 
-.txtFooter{
-  color: white;
+@media (max-width: 768px) {
+  nav ul li {
+      display: block;
+      margin-bottom: 10px;
+  }
 }
 
 /*Header*/
-.contHeader{
-  background-color:  #2b0655;
+header{
+  background-color: #2b0655;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
 }
 
 .txtTitle{
-    font-family: 'Times New Roman', Times, serif;  
+    font-family: Arial, Helvetica, sans-serif;  
     margin: 0;
     font-size: 50px;
     word-break: break-all;
     color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .txtSubTitle{
   color: white;
-
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 /*Main, Cards*/
@@ -133,9 +145,23 @@ button:focus-visible {
   vertical-align: middle;
 }
 
-.flip-card-front {
-  background-color: #181515;
-  color: rgb(0, 0, 0);
+.flip-card-front-vitor{
+  background-image: url(./img/vithonex.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+.flip-card-front-mateus{
+  background-image: url(./img/mateus.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+.flip-card-front-raul{
+  background-image: url(./img/raul.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
 }
 
 .flip-card-back {
@@ -144,11 +170,51 @@ button:focus-visible {
   transform: rotateY(180deg);
 }
 
+/*ARRUMAR AS IMAGENS*/
+#imagem1{
+  width: 250px;
+  height: 300px;
+  background-image: url("img/vithonex.jpg");
+  background-size: cover;
+}
+
+#imagem2{
+  width: 250px;
+  height: 300px;
+  background-image: url("img/mateus.jpg");
+  background-size: cover;
+}
+
+#imagem3{
+  width: 250px;
+  height: 300px;
+  background-image: url("img/raul.jpg");
+  background-size: cover;
+}
+
 /*Main, Form*/
 .container {
   padding: 50px;
+  width: 100%;
   color: #5f1392;
   text-transform: uppercase;
+}
+.mensagem{
+  height: 100px;
+  width: 100%; 
+}
+
+.registerbtn{
+  background-color: #5f1392;
+  color: #fff;
+  padding: 10px 50px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.registerbtn:hover{
+  background-color: #9b22ec;
 }
 
 #contatoH2{
@@ -177,6 +243,7 @@ hr {
 #contato form input,
 #contato form textarea {
   width: 100%;
+  height: 100px;
   padding: 15px;
   margin-bottom: 20px;
   border-radius: 10px;
@@ -197,7 +264,16 @@ hr {
   background-color: #9b22ec;
 }
 
+
 /*Main, Habilidades*/
+main{
+  padding: 20px;
+}
+section{
+  margin-bottom: 40px;
+  color: #581212;
+}
+
 #habilidades h2{
   text-align: center;
   color: #9b05ff;
@@ -255,5 +331,8 @@ tr:nth-child(even) {
   color: red;
 }
 
-* {box-sizing: border-box}
+* {box-sizing: border-box }
+*{     padding: 0;     margin: 0;     outline: none;     border: none;     box-sizing: border-box;     list-style: none; }
+*{font-family: 'poppins';}
+
 

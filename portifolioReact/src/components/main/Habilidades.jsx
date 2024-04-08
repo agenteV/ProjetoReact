@@ -1,6 +1,6 @@
 function Habilidades(){
 return(
-    <div className="Habilidades">
+    <>
         <h2>Nossas Habilidades</h2>
         <table>
             <tr>
@@ -29,7 +29,9 @@ return(
                 <td><i className="fa fa-check"></i></td>
             </tr>
         </table>
-    </div>
+    
+    </>
+   
     
 )
 }
