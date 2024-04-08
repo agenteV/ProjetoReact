@@ -5,6 +5,7 @@ function Header(){
                 <div className="title">
                     <h1 className="txtTitle">Portifólio</h1>
                 </div>
+                <hr/>
                 <div className="subtitle">
                     <p className="txtSubTitle">Bem-vindo ao nosso portifólio pessoal!</p>
                 </div>
